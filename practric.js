@@ -50,6 +50,33 @@ console.log(multipleResult);
 
 // ৩.৩ এইবার তিনটা প্যারামিটার ওয়ালা একটা অ্যারো ফাংশন ডিক্লেয়ার করো। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটারকে গুণ করে সেই রেজাল্ট রিটার্ন করবে। 
 
-const toalNumber = ( num1 , num2 , num3 ) => (num1 * num2 * num3);
-const totalResult = toalNumber(10, 20 , 30);
-console.log(totalResult);
+// const toalNumber = ( num1 , num2 , num3 ) => (num1 * num2 * num3);
+// const totalResult = toalNumber(10, 20 , 30);
+// console.log(totalResult);
+
+
+// ৩.৪ এইবার দুইটা প্যারামিটার ওয়ালা একটা অ্যারো ফাংশন নিবে। ওই arrow ফাংশনটা হবে অনেকগুলা লাইনের। সেখানে প্রত্যেকটা ইনপুট প্যারামিটার এর সাথে ২ যোগ করবে তারপর যোগফল দুইটা গুণ করবে। ক্যামনে করবে সেটা চিন্তা করে বের করার চেষ্টা করো। 
+
+// const firstNumber = (num1 , num2) => {
+//     let firstResult = num1 + 2;
+//     let secondResult = num2 + 2;
+//     return firstResult * secondResult;
+    
+    
+// }
+
+// const allResult = firstNumber(2,4);
+// console.log(allResult);
+
+
+// ৪. [হোম ওয়ার্ক] একটু গুগলে সার্চ দাও: javascript function declaration vs arrow function তারপর কয়েকটা আর্টিকেল পড়ে বুঝার চেষ্টা করো। 
+
+// ৪.৫. [এক্সট্রা আরেকটা হোম ওয়ার্ক। এইটা ভিডিওতে বলা নাই]: জাভাস্ক্রিপ্ট এর var, let, const এর মধ্যে প্রার্থক্য কি? 
+
+// ৫. অনেকগুলা সংখ্যার একটা array হবে। তারপর তোমার কাজ হবে array এর উপরে map ইউজ করে। প্রত্যেকটা উপাদানকে ৫ দিয়ে গুন্ করে গুনফল আরেকটা array হিসেবে রাখবে। পুরা কাজটা এক লাইনে হবে। 
+
+
+
+const numbers = ['1','2','3','4','5','6','7','8','9','10','11','12','13','14']
+const result = numbers.map(number => number*5);
+console.log(result);
