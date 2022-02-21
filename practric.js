@@ -84,6 +84,71 @@ console.log(multipleResult);
 // ৬. [ চ্যালেঞ্জিং। গুগলে সার্চ দিয়ে বের করো ] অনেকগুলা সংখ্যার একটা array থেকে শুধু বিজোড় সংখ্যা বের করে নিয়ে আসার জন্য filter ইউজ করো 
 
 
-const oddNumber = [4, 5, 45, 456, 78, 90, 87, 60, 80, 32, 13, 14, 15, 16];
-const checkOdd = oddNumber.filter(x => x % 2);
-console.log(checkOdd);
+// const oddNumber = [4, 5, 45, 456, 78, 90, 87, 60, 80, 32, 13, 14, 15, 16];
+// const checkOdd = oddNumber.filter(x => x % 2);
+// console.log(checkOdd);
+
+// ৭. একটা array এর মধ্যে অনেকগুলা অবজেক্ট আছে। সেখানে যেই অবজেক্ট এর price আছে ৫০০০ টেক্কা সেই অবজেক্টকে find দিয়ে বের করো। 
+
+// filter 
+
+// const numbers = [4,34,4,67,89,39,90,768,7,985];
+// const bigNum = numbers.filter(number => number > 20);
+// console.log(bigNum);
+
+
+// const oddNumber = [4, 5, 45, 456, 78, 90, 87, 60, 80, 32, 13, 14, 15, 16];
+// const checkOdd = oddNumber.filter(x => x % 2);
+// console.log(checkOdd);
+
+// ৭. একটা array এর মধ্যে অনেকগুলা অবজেক্ট আছে। সেখানে যেই অবজেক্ট এর price আছে ৫০০০ টেক্কা সেই অবজেক্টকে find দিয়ে বের করো। 
+
+// const products = [
+//     {name: 'NoteBook', price: 50, color: 'Orange'},
+//     {name: 'Pen', price: 20, color: 'Red'},
+//     {name: 'UPS', price: 5000, color: 'Red'},
+//     {name: 'PC', price: 72000, color: 'White'},
+//     {name: 'Phone', price: 22000, color: 'White'}
+// ]
+
+// const expensiveIteam = products.find(x => x.price >=5000);
+// console.log(expensiveIteam);
+
+
+// ৭.৫ [এক্সট্রা] জাভাস্ক্রিপ্ট এ array এর map, forEach, filter, find কোনটা দিয়ে কি হয়। সেটার একটা সামারি লিখে ফেলো। 
+
+
+// ৮. সিম্পল একটা জাভাস্ক্রিপ্ট অবজেক্ট এর কোন একটা প্রোপার্টিকে ভেরিয়েবল হিসেবে ডিক্লেয়ার করার জন্য destructuring ইউজ করো। 
+
+// const products = {name: 'NoteBook', price: 50, color: 'Orange'};
+// const{price} = products;
+// console.log(price);
+
+// ৯. [চ্যালেঞ্জিং] array এর destructuring করবে আর সেটা করার জন্য তুমি এরে এর থার্ড পজিশন এর উপাদান কে destructuring করে 'three' নামক একটা ভেরিয়েবল এ রাখবে। 
+
+// const products = ['NoteBook', 'Laptop', 'Phone', 'Money', 'WaterBottle', '50', 'color', 'Orange'];
+// const [one, two , three, four, five , six] = products;
+// console.log(three);
+
+
+// ১০. তিনটা প্যারামিটার ওয়ালা একটা ফাংশন লিখবে। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটার এর যোগ করে যোগফল রিটার্ন করবে। আর থার্ড প্যারামিটার এর একটা ডিফল্ট ভ্যালু থাকবে। সেটা হবে ৭। 
+
+
+// const threeNumbres = (a, b , c=7) => a + b + c ;
+// console.log(`Result is : ${threeNumbres(20,10)}`);
+
+// ১১. একটা nested অবজেক্ট ডিক্লেয়ার করো (অর্থাৎ একটা অবজেক্ট এর প্রপার্টি এর মধ্যেও যে অবজেক্ট থাকতে পারে। আবার সেই অবজেক্ট এর প্রপার্টি এর মধ্যেও সে অবজেক্ট থাকতে পারে। সেই রকম একটা অবজেক্ট ডিক্লেয়ার করো। এবং যেকোন একটা প্রপার্টি এর মান একটা array হবে। জাস্ট এমন একটা অবজেক্ট )
+const PC = {
+    name: "Value-Top",
+    price: 7200,
+    color: "white",
+    processor: {
+        ram: '16 GB',
+        ssd: '500 GB',
+        hardDisk: null
+    },
+    accesories: ['KeyBoard', 'Speaker', 'UPS']
+}
+
+/* ১২. উপরের অবজেক্ট এ ডট এর আগে যে প্রশ্নবোধক চিহ্ন দিয়ে যে অপশনাল চেইনিং করা যায়। সেটা একটু প্রাকটিস করো। */
+console.log(`Optional Chaing: ${PC?.power?.nothing}`)
