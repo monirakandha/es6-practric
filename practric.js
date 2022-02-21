@@ -38,12 +38,18 @@ console.log(multipleResult);
 // ৩.২ তুমি দুইটা প্যারামিটার ওয়ালা একটা অ্যারো ফাংশন লিখবে। সেই ফাংশনের ভিতরে কাজ হবে। প্রত্যেকটা ইনপুট প্যারামিটার এর সাথে ২ যোগ করবে তারপর যোগফল দুইটা গুণ করবে। ক্যামনে করবে সেটা চিন্তা করে বের করার চেষ্টা করো 
 
 
-const firstTotal = (num1) => (num1+2);
-const secondToal = (num2)=>(num2 + 2);
-const totalResult = firstTotal(50);
-const secondResult = secondToal(13);
-const allResult = totalResult + secondResult
+// const firstTotal = (num1) => (num1+2);
+// const secondToal = (num2)=>(num2 + 2);
+// const totalResult = firstTotal(50);
+// const secondResult = secondToal(13);
+// const allResult = totalResult + secondResult
 
-const lastResult = totalResult * 2;
-console.log(allResult);
-console.log(lastResult);
+// const lastResult = totalResult * 2;
+// console.log(allResult);
+// console.log(lastResult);
+
+// ৩.৩ এইবার তিনটা প্যারামিটার ওয়ালা একটা অ্যারো ফাংশন ডিক্লেয়ার করো। যেই ফাংশনের কাজ হবে তিনটা প্যারামিটার নিয়ে সেই তিনটা প্যারামিটারকে গুণ করে সেই রেজাল্ট রিটার্ন করবে। 
+
+const toalNumber = ( num1 , num2 , num3 ) => (num1 * num2 * num3);
+const totalResult = toalNumber(10, 20 , 30);
+console.log(totalResult);
